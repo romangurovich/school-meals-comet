@@ -88,6 +88,17 @@ export const Header = (): React.ReactElement => {
                   Home
                 </NavLink>
               </li>
+              <li className="usa-nav__primary-item">
+                <NavLink
+                  id="welcome-link"
+                  to="/welcome"
+                  className={`usa-nav__link ${
+                    location.pathname === '/welcome' ? 'usa-current' : ''
+                  }`}
+                >
+                  Welcome
+                </NavLink>
+              </li>
               {isSignedIn && (
                 <li className="usa-nav__primary-item">
                   <NavLink
